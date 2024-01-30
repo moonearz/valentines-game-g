@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <meta charset="utf-8" />
+        <title>v-day!</title>
+        <link rel = "stylesheet" href = "style.css">
+        <script src ="app.js"></script>
+    </head>
+    <body>
+    <div id = "overlay" class = "overlay"> 
+        <button id = "x-button" class = "x-button" onclick = "document.getElementById('overlay').style.display = 'none'">x</button>
+        <div class = "sub">
+            <div class = "rules">
+                <h1>Rules: </h1>
+                <p>It's like Tetris, but easier!</p>
+                <p>Orient the given piece according to the "correct orientations" window</p>
+                <p>Land the piece on the area <u class = "yellow">underlined</u> in yellow</p>
+                <p>Dont' worry! The computer will reset the last move if an error is made</p>
+            </div>
+            <div class = "controls">
+                <h2>Controls: </h2>
+                <div class = image-container>
+                    <img src = "images/keyboard.jpg" alt = "controls" class= "image">
+                    <div class= "right"> Move Right</div>
+                    <div class = "left"> Move Left</div>
+                    <div class = "down"> Move Down</div>
+                    <div class = "up"> Rotate Right</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1> Happy Valentine's Day!</h1>
+    <div id = "container" class = "container">
+        <div id = "grid" class = "grid"></div>
+        <div id = "sidebar" class = "sidebar">
+            <div class = "co">Correct Orientation: </div>
+            <div class = "window">
+                <div id = "padding1" class = "padding"></div>
+                <div id = "mini-grid" class = "mini-grid"></div>
+                <div id = "padding2" class = "padding"></div>
+            </div>
+            <button id = "play-button" class = "play-button">Play</button>
+            <button id = "how-to-play" class = "how-to-play">How To Play</button>
+        </div>
+    </div>
+    </body>

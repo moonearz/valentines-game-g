@@ -1,0 +1,170 @@
+@font-face {
+    font-family: "tetrisfont";
+    src: url(font/PressStart2P-Regular.ttf);
+}
+* {
+    font-family: "tetrisfont";
+}
+h1 {
+    text-align: center;
+}
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    background: radial-gradient(
+    circle,
+    rgb(255, 217, 224) 0%,
+    rgb(243, 76, 76) 89%,
+    rgb(255, 17, 0) 100%
+  );
+}
+.grid {
+    height: 441px;
+    width: 441px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid black; 
+ }
+.container {
+    display: flex;
+    justify-content: center;
+}
+.grid div {
+    height: 21px;
+    width:21px;
+    margin: 0%;
+}
+
+.sidebar {
+    display:flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.window {
+    display: flex;
+    flex-direction: row;
+}
+.mini-grid {
+    margin-top: 20px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: linear-gradient(#5c034e, #e509c0);
+}
+.padding {
+    margin-top: 20px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: linear-gradient(#5c034e, #e509c0);
+}
+
+.mini-grid div {
+    height: 20px;
+    width: 20px;
+}
+
+.pink-block {
+    background-image: url('images/pink_block.png');
+}
+
+.red-block {
+    background-image: url('images/red_block.png');
+}
+/*button styling*/
+.play-button {
+    background-color: #1eb00e;
+    margin-top: 20px;
+}
+.play-button:hover {
+    background:rgb(137, 255, 137);
+    background-image: linear-gradient(top, #d25068, #f66c7b);
+  }
+.how-to-play {
+    background-color: orange;
+    margin-top: 5px;
+}
+.how-to-play:hover {
+    background-color: rgb(255, 200, 98);
+    margin-top: 5px;
+}
+.co {
+    font-size: small;
+}
+.base {
+    box-sizing: border-box;
+    border-bottom: 3px solid yellow;
+}
+
+/*overlay styling*/
+#overlay {
+    height: 100%;
+    width: 100%;
+    font-size: 15px;
+    display: none; 
+    vertical-align: top;
+    background-color: rgba(0, 49, 146, 0.5);
+    cursor: pointer;
+}
+.sub {
+    display: flex;
+    flex-direction: column;
+}
+.rules {
+    text-align: center;
+}
+.controls {
+    text-align: center;
+}
+.image-container {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.image {
+    height: 100%;
+    width: 100%;
+}
+.right {
+    position: absolute;
+    top: 78%;
+    right: 5%;
+    font-size: 0.8em;
+}
+.left {
+    position: absolute;
+    top: 78%;
+    right: 65%;
+    font-size: 0.8em;
+}
+.down {
+    position: absolute;
+    top: 83%;
+    right: 35%;
+    font-size: 0.8em;
+}
+.up {
+    position: absolute;
+    top: 30%;
+    right:2%;
+    font-size: 0.75em;
+}
+.yellow {
+    text-decoration: underline;
+    text-decoration-color: yellow;
+}
+.x-button{
+    background: red;
+    float: right;
+}
+.x-button:hover {
+    background:red;
+    color:#fff;
+}
